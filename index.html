@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Modal Popup</title>
+  </head>
+  <body>
+    <!-- button that will show popup -->
+    <button id="btn-click-me" onclick="openPopup()">Click Me</button>
+
+    <!-- the hidden popup -->
+    <div id="popup-modal">
+      <div class="popup-container">
+        <div class="img-with-qst">
+          <img
+            src="/assets/png-clipart-computer-icons-error-information-error-angle-triangle.png"
+            alt="error-sign"
+          />
+          <span><strong>Are you sure you want to exit?</strong></span>
+        </div>
+        <p>
+          Just remember, time is a fiat circle and reality is merely a social
+          construct.
+        </p>
+        <div class="buttons">
+          <button class="no-btn" onclick="optionsPopup()">No</button>
+          <button class="close-btn" onclick="exitPopup()">Yes</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="no-msg">You clicked No!</div>
+    <div id="exit-msg">You exited!</div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
