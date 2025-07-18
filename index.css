@@ -14,13 +14,15 @@ line-height: 1.6;
 }
 
 #btn-click-me{
-    width: auto;
-    margin: 50px 200px;
+    width: fit-content;
+    margin: 50px 100px;
     border: 1px solid rgb(47, 231, 255);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     font-size: 15px;
     cursor: pointer;
+    background-color: #333;
+    color: aliceblue;
 }
 
 #btn-click-me:hover{
